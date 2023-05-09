@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/sign_up_css.css">
+    <title>Movie Mate</title>
+</head>
+
+<body>
+        <!-- Navbar -->
+
+        <nav>
+            <div class="navbar-left">
+                <a href="#"  style="font-weight: bolder; color: #394867;"><img src="" alt="">MovieMate</a>
+                <a href="../index.html">Home</a>
+                <a href="Now_Showing.html">About</a>
+                <a href="Booking_Page.html">Contact</a>
+            </div>
+            <div class="navbar-right">
+            
+            </div>
+          </nav>
+          
+      
+        <!-- End of Navbar -->
+
+    
+        <div class="container">
+            <main>
+                <article class="signup">
+                    <section class="signup-section section">
+                        <div class="container center">
+                            <div class="form form-box">
+                                <div class="title center">
+                                    <h2>Sign Up</h2>
+                                </div>
+                            <form method="post">
+                                <label for="reg-id">Registration ID*</label>
+                                <input type="text" id="reg-id" name="reg-id" placeholder="Enter registration ID" required pattern="[0-9A-Za-z]{8}" title="Registration ID must be 8 characters long with alphanumeric values (ex: 23WP0001)">
+                                <br>
+                    
+                                <label for="username">Username*</label>
+                                <input type="text" id="username" name="username" placeholder="Enter username" required pattern="[A-Za-z]+" title="Username should not have any digits">
+                                <br>
+                    
+                                <label for="password">Password*</label>
+                                <input type="password" id="password" name="password" placeholder="Enter password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}" title="Password should have at least one small case letter, one uppercase letter, one digit, and one special character with a minimum password length of 8">
+                                <br>
+                    
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" name="email" placeholder="Enter email" required>
+                                <br>
+                    
+                                <label for="mobile">Mobile Number*</label>
+                                <input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number" required pattern="[1-9][0-9]{9}" title="Mobile number should have exactly 10 digits and should not be entered like (0000000000)">
+                                <br>
+                    
+                                <label for="dob">Date of Birth*</label>
+                                <input type="date" id="dob" name="dob" required>
+                                <br>
+                    
+                                <a href="#" class="button">Submit</a>
+                                <a href="../index.html" class="button">Cancel</a>
+                            </form>
+                        </div>
+                        </div>
+                    </section>
+                </article>
+            </main>
+        </div>
+</body>
+
+</html>

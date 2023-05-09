@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/now_showing.css">
+    <title>Movie Mate</title>
+
+</head>
+<body>
+<!-- Navbar -->
+
+    <nav>
+        <div class="navbar-left">
+          <a href="#"  style="font-weight: bolder; color: #394867;"><img src="" alt="">MovieMate</a>
+          <a href="../index.html">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="navbar-right">
+          <a href="Sign_Up.html" class="button">Sign UP</a>
+          <a href="Sing_IN.html" class="button">Sign IN</a>
+        </div>
+      </nav>
+      
+  
+<!-- End of Navbar -->
+
+<!-- Search and Genre -->
+
+  <!-- Movies -->
+
+    <div class="trending-container">
+      
+            <div class="container">
+                <!-- Search Bar -->
+              <div class="left-container">
+                <h2> Search For a Movie </h2>
+                  <input class="input-fields" type="text" id="search-input" placeholder="Search for a movie...">
+              </div>
+                <!-- Genre -->
+              <div class="right-container">
+                <h2>Movie Geners</h2>
+                <select class="input-fields" id="genre-select" onchange="filterMovies()">
+                  <option value="">All Genres</option>
+                  <option value="action">Action</option>
+                  <option value="comedy">Comedy</option>
+                  <option value="drama">Drama</option>
+                </select>
+              </div>
+            </div>  
+
+        <h1 class="heading_txt">Now Showing Movies</h1>
+        <div class="movie-cards">
+          <div class="movie-card action">
+            <img src="../images/GOTGV3.jpg" alt="Movie 1">
+            <div class="movie-info">
+              <h2>Guardians of the Galaxy : Vol 3</h2>
+              <p>Genre: Comedy</p>
+              <p>2h 48m <b>:</b> Audio(5), Subtitles(1) 13+</p>
+              <a href="Booking_Page.html" class="button">Get Ticktes</a>
+            </div>
+          </div>
+          <div class="movie-card comedy">
+            <img src="../images/PUSHPA.jpg" alt="Movie 2">
+            <div class="movie-info">
+              <h2>Pushpa 2 - The Rule</h2>
+              <p>Genre: Action</p>
+              <p>2h 08m <b>:</b> Audio(5), Subtitles(3) 16+</p>
+              <a href="Booking_Page.html" class="button">Get Ticktes</a>
+            </div>
+          </div>
+          <div class="movie-card drama">
+            <img src="../images/Shazam.jfif" alt="Movie 3">
+            <div class="movie-info">
+              <h2>Shazam</h2>
+              <p>Genre: Drama</p>
+              <p>2h 30m <b>:</b> Audio(2), Subtitles(4) 13+</p>
+              <a href="Booking_Page.html" class="button">Get Ticktes</a>
+            </div>
+          </div>
+          <div class="movie-card comedy">
+            <img src="../images/RRR.jpg" alt="Movie 2">
+            <div class="movie-info">
+              <h2>RRR</h2>
+              <p>Genre: Action</p>
+              <p>2h 55m <b>:</b> Audio(5), Subtitles(4) 16+</p>
+              <a href="Booking_Page.html" class="button">Get Ticktes</a>
+            </div>
+          </div>
+
+        </div>
+    </div>
+      
+    
+    <script src="../js/now_showing.js"></script>
+</body>
+</html>
